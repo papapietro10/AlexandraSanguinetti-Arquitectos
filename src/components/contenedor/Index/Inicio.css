@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+.index {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/alexasanguinetti-27213.appspot.com/o/Alexandra%20Sanguinetti%20(1).png?alt=media&token=2638b545-aa39-4627-841f-9f9032044e66');
+  height: 40em;
+  background-size: 100% 100%;
+}
+
+.container-index{
+    width: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.container-index h2{
+    color: aliceblue;
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    text-shadow: 0px 0px 50px rgb(0, 0, 0);
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+.coming-soon{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+.coming-soon h4 {
+    color: rgb(176, 176, 176);
+    font-size: 2em;
+ padding-right: 2em;
+ font-family: 'Lato', sans-serif;
+ font-weight: bold;
+ -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+ animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    
+}
+
+@media only screen and (min-width: 340px) and (max-width: 440px){
+    .container-index h2{
+        color: aliceblue;
+        font-size: 2em;
+        font-weight: bold;
+        font-family: 'Lato', sans-serif;
+        margin-left: 1em;
+        margin-bottom: 0.5em;
+       
+    }
+    .coming-soon h4{
+        position: relative;
+        top:2em;
+    }
+}
+@media only screen and (min-width: 440px) and (max-width: 540px){
+    .container-index h2{
+        color: aliceblue;
+        font-size: 2.6em;
+        font-weight: bold;
+        font-family: 'Lato', sans-serif;
+        margin-left: 1em;
+        margin-bottom: 0.5em;
+       
+    }
+    .coming-soon h4{
+        position: relative;
+        top:2em;
+    }
+}
